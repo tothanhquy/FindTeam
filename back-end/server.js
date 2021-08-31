@@ -15,7 +15,8 @@ const app = express();
 // parse requests of content-type - application/json
 // app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'../front-end/build')));
+// app.use('src',express.static(path.join(__dirname,'../front-end/src')));
 
 // parse requests of content-type - application/x-www-form-urlencoded
 // app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,8 +27,8 @@ app.use(express.static(path.join(__dirname,'public')));
 
 // app.use('/', Trangchu);
 
-app.get ("/", (req, res) => { 
-  res.sendFile(path.join(__dirname,"public","index.html")); 
+app.get ("/*", (req, res) => { 
+  res.sendFile(path.join(__dirname,"../front-end/build/index.html")); 
 });
 
 // simple route

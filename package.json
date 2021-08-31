@@ -1,0 +1,12 @@
+{
+    "name": "ft",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "node back-end/server.js",
+      "server": "node back-end/server.js",
+      "client": "cd front-end && npm run start",
+      "dev": "npm run server && npm run client"
+    }
+  }
