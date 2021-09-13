@@ -1,0 +1,49 @@
+@import url("../Theme/autoload.scss");
+
+.logo_logocomponent{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    width:auto;
+    height:auto;
+
+    > .graph{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width:auto;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > .line{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:auto;
+            height:auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .item_graph{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:30px;
+            height:30px;
+        }
+        .item_graph:nth-child(1){
+
+        }
+    }
+    
+}
